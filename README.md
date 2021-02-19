@@ -8,4 +8,3 @@ Lars Tinnefeld
 
 *Image: [mohamed_hassan](https://pixabay.com/users/mohamed_hassan-5229782/) on Pixabay
 
-Content:
