@@ -8,3 +8,13 @@ Lars Tinnefeld
 
 *Image: [mohamed_hassan](https://pixabay.com/users/mohamed_hassan-5229782/) on Pixabay
 
+## Table of content
+1. [About Starbucks (Business understanding)](#business_understanding)
+2. [Objectives](#objectives)
+3. [Approach](#approach)
+4. [Data](#data)
+5. [Data preparation](#preparation)
+6. [Statistical evaluation of the experiment](#ab_test)
+7. [Data Modelling](#modelling)
+8. [Evaluation](#evaluation)
+
