@@ -9,7 +9,7 @@ Lars Tinnefeld
 *Image: [mohamed_hassan](https://pixabay.com/users/mohamed_hassan-5229782/) on Pixabay
 
 ## Table of content
-1. [Introduction] (Business understanding)](#business_understanding)
+1. [Introduction](#business_understanding)
 2. [Objectives](#objectives)
 3. [Data](#data)
 4. [Data preparation](#preparation)
@@ -28,5 +28,23 @@ IBM is asking in this project to investigate ways to develop an algorithm which 
 - Content-Based Recommendations
 - Matrix Factorization
 
-## Data <a name="Data"></a>
-`articles_community.csv`: 
+## Data <a name="data"></a>
+`articles_community.csv`: Lookup table which contains all articles
+
+| # |  Column | Non-Null Count | Dtype | Content |
+| --- | --- | --- | --- | --- |
+| 0 | doc_body | 1042 non-null | object | Full text content |
+| 1 | doc_description | 1053 non-null | object | Summary of content |
+| 2 | doc_full_name | 1056 non-null | object | Name of article |
+| 3 | doc_status | 1056 non-null | object | Flag if document is live |
+| 4 | article_id | 1056 non-null | int64 | ID of the article |
+
+`user-item-interactions.csv`: Data table which contains all user-article interactions
+
+| # |  Column | Non-Null Count | Dtype | Content |
+| --- | --- | --- | --- | --- |
+| 0 | article_id | 45993 non-null | float64 | ID of article |
+| 1 | title | 45993 non-null | object | Name of article |
+| 2 | email | 45976 non-null | object | Anonymized email address |
+
+## Data preparation <a name="preparation"></a>
