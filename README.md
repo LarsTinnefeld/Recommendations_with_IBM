@@ -1,4 +1,4 @@
-# Recommendations_with_IBM
+# Recommendations of IBM Watson Articles
 Recommendations with Collaborative Filtering and Matrix Factorization (SVD)
 
 Lars Tinnefeld
@@ -48,4 +48,22 @@ IBM is asking in this project to investigate ways to develop an algorithm which 
 | 2 | email | 45976 non-null | object | Anonymized email address |
 
 ## Data preparation <a name="preparation"></a>
+The data preparation is consisting of data wrangling and Exploratory Data Analysis.
 
+Data wrangling:
+- Searching for missing valus
+- Dealing with duplicates
+
+EDA:
+- Count of unique users
+- Count of unique articles in both datasets
+- Distribution of interactions
+- Count of unique user-article interactions
+
+## Data modelling <a name="modelling"></a>
+1) Rank-based recommendations
+2) User-User-based collaborative filtering
+3) Content-based recommendations
+4) Matrix factorization (SCD)
+
+## Evaluation <a name="evaluation"></a>
