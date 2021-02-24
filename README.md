@@ -1,4 +1,4 @@
-# Recommendations_with_IBM
+# Recommendations of IBM Watson Articles
 Recommendations with Collaborative Filtering and Matrix Factorization (SVD)
 
 Lars Tinnefeld
@@ -9,14 +9,12 @@ Lars Tinnefeld
 *Image: [mohamed_hassan](https://pixabay.com/users/mohamed_hassan-5229782/) on Pixabay
 
 ## Table of content
-1. [Introduction] (Business understanding)](#business_understanding)
+1. [Introduction](#business_understanding)
 2. [Objectives](#objectives)
-3. [Approach](#approach)
-4. [Data](#data)
-5. [Data preparation](#preparation)
-6. [Statistical evaluation of the experiment](#ab_test)
-7. [Data Modelling](#modelling)
-8. [Evaluation](#evaluation)
+3. [Data](#data)
+4. [Data preparation](#preparation)
+5. [Data Modelling](#modelling)
+6. [Evaluation](#evaluation)
 
 ## Inroduction <a name="business_understanding"></a>
 This project is part of Udacity's Data Science Nanodegree program and was provided by IBM Watson Studio. IBM Watson Studio is managing a platform which provides articles to their user community. Selected articles are presented to users on the landing page's dashboard. Users can react to the content by communicating via email. These interactions are the only way a user's interest could be measured. The provided datasets contain the anonymized email adresses along with the article-ID the message was dealing with and a lookup table in which the articles are listed with their ID and content.
@@ -30,4 +28,42 @@ IBM is asking in this project to investigate ways to develop an algorithm which 
 - Content-Based Recommendations
 - Matrix Factorization
 
-## Approach <a name="approach"></a>
+## Data <a name="data"></a>
+`articles_community.csv`: Lookup table which contains all articles
+
+| # |  Column | Non-Null Count | Dtype | Content |
+| --- | --- | --- | --- | --- |
+| 0 | doc_body | 1042 non-null | object | Full text content |
+| 1 | doc_description | 1053 non-null | object | Summary of content |
+| 2 | doc_full_name | 1056 non-null | object | Name of article |
+| 3 | doc_status | 1056 non-null | object | Flag if document is live |
+| 4 | article_id | 1056 non-null | int64 | ID of the article |
+
+`user-item-interactions.csv`: Data table which contains all user-article interactions
+
+| # |  Column | Non-Null Count | Dtype | Content |
+| --- | --- | --- | --- | --- |
+| 0 | article_id | 45993 non-null | float64 | ID of article |
+| 1 | title | 45993 non-null | object | Name of article |
+| 2 | email | 45976 non-null | object | Anonymized email address |
+
+## Data preparation <a name="preparation"></a>
+The data preparation is consisting of data wrangling and Exploratory Data Analysis.
+
+Data wrangling:
+- Searching for missing valus
+- Dealing with duplicates
+
+EDA:
+- Count of unique users
+- Count of unique articles in both datasets
+- Distribution of interactions
+- Count of unique user-article interactions
+
+## Data modelling <a name="modelling"></a>
+1) Rank-based recommendations
+2) User-User-based collaborative filtering
+3) Content-based recommendations
+4) Matrix factorization (SCD)
+
+## Evaluation <a name="evaluation"></a>
